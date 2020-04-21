@@ -6,7 +6,7 @@ const ChartList = (props) => {
     return (
         <ul>
             <h2>I am the chart List</h2>
-            <Song />
+            <Song songs={props.songs}/>
         </ul>
     )
 

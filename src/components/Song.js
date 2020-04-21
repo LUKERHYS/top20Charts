@@ -1,11 +1,16 @@
 import React from 'react';
 
 const Song = (props) => {
+    const items = props.songs.map(song => {
+        return <li> {song["entry"]["im:name"]["label"]}</li>
+        })
+
+
     return (
-        <div>
-            <li>I am the song</li>
-        </div>
+        <>
+        { items }
+        </>
     )
-}
+    }
 
 export default Song;
